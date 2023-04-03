@@ -32,6 +32,9 @@ foreach ($Project in Get-ChildItem *.Tests.csproj -Recurse | Select-Object)
     Remove-Item "$($Project.Directory)/TestResults" -Recurse -ErrorAction SilentlyContinue
 }
 
+Write-Host "Cleaning solution..." - ForegroundColor Green
+dotnet clean | Out-Null
+
 Write-Host "Installing dotnet-reportgenerator-globaltool..." -ForegroundColor Green
 dotnet tool install -g dotnet-reportgenerator-globaltool | Out-Null
 
