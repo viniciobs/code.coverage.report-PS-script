@@ -3,7 +3,7 @@
 This is a PowerShell script for generating code coverage report with [dotnet-reportgenerator](https://www.nuget.org/packages/dotnet-reportgenerator-globaltool).
 
 ## How to run
-1. Open a PowerShell or command prompt
+1. Open a PowerShell
 2. Type `./report-generator.ps1`
 
 It accepts two optional args:
